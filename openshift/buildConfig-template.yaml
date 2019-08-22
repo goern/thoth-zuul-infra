@@ -32,7 +32,7 @@ parameters:
 
 objects:
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -66,7 +66,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -100,7 +100,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -136,7 +136,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -172,7 +172,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -209,7 +209,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -246,7 +246,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -283,7 +283,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -320,7 +320,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
@@ -357,7 +357,7 @@ objects:
           imageChange: {}
 
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       labels:
         app: "zuul"
