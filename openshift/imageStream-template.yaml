@@ -19,7 +19,7 @@ metadata:
 
 objects:
   - kind: ImageStream
-    apiVersion: v1
+    apiVersion: image.openshift.io/v1
     metadata:
       annotations:
         openshift.io/display-name: "thoth-python36"
@@ -30,16 +30,16 @@ objects:
     spec:
       lookupPolicy:
         local: true
-    tags:
-      - name: "fedora28"
-        referencePolicy:
-          type: Source
-      - name: "ubi8"
-        referencePolicy:
-          type: Source
+      tags:
+        - name: "fedora28"
+          referencePolicy:
+            type: Source
+        - name: "ubi8"
+          referencePolicy:
+            type: Source
 
   - kind: ImageStream
-    apiVersion: v1
+    apiVersion: image.openshift.io/v1
     metadata:
       labels:
         app: zuul
@@ -48,16 +48,16 @@ objects:
     spec:
       lookupPolicy:
         local: true
-    tags:
-      - name: "fedora28"
-        referencePolicy:
-          type: Source
-      - name: "ubi8"
-        referencePolicy:
-          type: Source
+      tags:
+        - name: "fedora28"
+          referencePolicy:
+            type: Source
+        - name: "ubi8"
+          referencePolicy:
+            type: Source
 
   - kind: ImageStream
-    apiVersion: v1
+    apiVersion: image.openshift.io/v1
     metadata:
       labels:
         app: zuul
@@ -66,13 +66,13 @@ objects:
     spec:
       lookupPolicy:
         local: true
-    tags:
-      - name: "ubi8"
-        referencePolicy:
-          type: Source
+      tags:
+        - name: "ubi8"
+          referencePolicy:
+            type: Source
 
   - kind: ImageStream
-    apiVersion: v1
+    apiVersion: image.openshift.io/v1
     metadata:
       labels:
         app: zuul
@@ -81,16 +81,16 @@ objects:
     spec:
       lookupPolicy:
         local: true
-    tags:
-      - name: "fedora28"
-        referencePolicy:
-          type: Source
-      - name: "ubi8"
-        referencePolicy:
-          type: Source
+      tags:
+        - name: "fedora28"
+          referencePolicy:
+            type: Source
+        - name: "ubi8"
+          referencePolicy:
+            type: Source
 
   - kind: ImageStream
-    apiVersion: v1
+    apiVersion: image.openshift.io/v1
     metadata:
       labels:
         app: zuul
@@ -99,16 +99,16 @@ objects:
     spec:
       lookupPolicy:
         local: true
-    tags:
-      - name: "fedora28"
-        referencePolicy:
-          type: Source
-      - name: "ubi8"
-        referencePolicy:
-          type: Source
+      tags:
+        - name: "fedora28"
+          referencePolicy:
+            type: Source
+        - name: "ubi8"
+          referencePolicy:
+            type: Source
 
   - kind: ImageStream
-    apiVersion: v1
+    apiVersion: image.openshift.io/v1
     metadata:
       annotations:
         openshift.io/display-name: "thoth-openshift-client"
@@ -119,7 +119,7 @@ objects:
     spec:
       lookupPolicy:
         local: true
-    tags:
-      - name: "v0.12.3"
-        referencePolicy:
-          type: Source
+      tags:
+        - name: "v0.12.3"
+          referencePolicy:
+            type: Source
